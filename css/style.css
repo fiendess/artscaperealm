@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.navbar-brand strong {
+  font-weight: 10px;
+}
+
+.welcome-area {
+  position: relative;
+  z-index: 1;
+}
+.welcome-slides {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.single-welcome-slide {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 600px;
+  background-color: #fc6060;
+  background-size: cover;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-welcome-slide {
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-welcome-slide {
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .single-welcome-slide {
+    height: 450px;
+  }
+}
+.single-welcome-slide .welcome-text {
+  position: relative;
+  z-index: 1;
+}
+.single-welcome-slide .welcome-text h2 {
+  font-weight: 700;
+  font-size: 82px;
+  display: block;
+  margin-bottom: 0;
+  background: -webkit-linear-gradient(#6483ff, #ffe89e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (max-width: 767px) {
+  .single-welcome-slide .welcome-text h2 {
+    font-size: 42px;
+  }
+}
+.single-welcome-slide .welcome-text p {
+  color: #ffffff;
+  margin-bottom: 50px;
+  display: block;
+}
+.single-welcome-slide .welcome-text .hero-mail-contact {
+  color: #ffffff;
+  font-style: italic;
+  text-decoration: underline;
+}
+.single-welcome-slide .welcome-text .hero-mail-contact:hover,
+.single-welcome-slide .welcome-text .hero-mail-contact:focus {
+  color: #fc6060;
+}
+/* carousel end */
+
+/* Tiny Slider */
+#slider {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerSlide {
+  width: 1600px;
+  margin: auto;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+#controls i {
+  color: rgb(12, 12, 12);
+  font-size: 1rem;
+}
+
+.previous,
+.next {
+  padding: 2px;
+  width: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  transition: 0.7s ease-in-out;
+}
+
+.previous:hover,
+.next:hover {
+  border: 3px solid gray;
+}
+
+.slider-img {
+  width: 100%;
+  height: 87px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 6%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.judul {
+  text-decoration: none;
+  text-shadow: 3px 3px 3px black;
+  outline: #171717;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 650;
+}
+
+.slider-img:hover {
+  transform: scale(1.1);
+}
+
+.cat-1 {
+  background-image: url(../img/digital_art/allcategory/digitalart.png);
+}
+
+.cat-2 {
+  background-image: url(../img/digital_art/allcategory/abstract.jpg);
+}
+
+.cat-3 {
+  background-image: url(../img/digital_art/allcategory/concept-art.jpg);
+}
+
+.cat-4 {
+  background-image: url(../img/digital_art/allcategory/horror.jpg);
+}
+
+.subcontainer {
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 1600px) {
+  .containerSlide {
+    width: 100%;
+  }
+}
+
+/* slider end */
+
+/* Main content */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 20px;
+
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.category {
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.category-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+}
+.photo {
+  position: relative;
+}
+
+.photo img:hover {
+  filter: brightness(50%);
+}
+
+.digital-art-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 25px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .category-gallery {
+    flex-direction: column;
+  }
+}
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+* body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #171717;
+}

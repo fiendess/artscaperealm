@@ -1,0 +1,38 @@
+.column-content1,
+.column-content2,
+.column-content3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+}
+.photo {
+  position: relative;
+}
+
+.photo img:hover {
+  filter: brightness(50%);
+}
+
+.digital-art-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 25px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .category-gallery {
+    flex-direction: column;
+  }
+}
