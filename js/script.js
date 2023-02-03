@@ -24,16 +24,3 @@ let slider = tns({
     },
   },
 });
-
-$(document).ready(function () {
-  $("#imageModal1").on("shown.bs.modal", function () {
-    $("#imageModal1").trigger("focus");
-  });
-  $("#imageModal2").on("shown.bs.modal", function () {
-    $("#imageModal2").trigger("focus");
-  });
-  $("#imageModal3").on("shown.bs.modal", function () {
-    $("#imageModal3").trigger("focus");
-  });
-  // More modal elements
-});
